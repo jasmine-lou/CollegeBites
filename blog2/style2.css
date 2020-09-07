@@ -33,14 +33,63 @@
     color:#3e524e
 }
 
-/* Extra small devices (phones) */
-@media only screen and (max-width: 600px) {
-
+.sectiontitle {
+    font-size: 32px;
+    font-weight: bolder;
+    padding: 30px;
+    text-align: center;
 }
 
-/* Small devices (portrait tablets and large phones) */
-@media only screen and (min-width: 600px) {
+.imggallery{
+    padding: 0px 40px;
+}
 
+.galleryphotos{
+    width:100%;
+    border-radius: 20px;
+    border: 5px solid #BEEDE5;
+}
+
+.imgcolumn{
+    width: 33.33%;
+    padding: 10px;
+    float: left;
+    position: relative;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 15px;
+    background: #beede5ab;
+    color: black;
+    width: 95%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.imgcolumn:hover .overlay {
+    opacity: 1;
+}
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 600px) {
+    .imggallery{
+        padding: 0px 20px;
+    }
+    .imgcolumn{
+        width: 100%;
+        padding: 10px;
+    }
 }
 
 /* Large devices (laptops/desktops) */
