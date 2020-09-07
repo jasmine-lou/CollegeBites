@@ -132,14 +132,14 @@
     position: absolute;
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones) */
 @media only screen and (max-width: 600px) {
     .column.left, .column.right{
         width:100%;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones) */
 @media only screen and (min-width: 600px) {
     .column.left{
         width:65%;
@@ -150,7 +150,7 @@
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops) */
 @media only screen and (min-width: 992px) {
     .column.left{
         width:70%;
