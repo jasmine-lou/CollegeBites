@@ -12,6 +12,7 @@
     overflow: hidden;
     background-color: #E0F8F5;
     font-weight: bold;
+    margin: 0;
 }
 
 .menu a{
@@ -38,20 +39,37 @@
     font-weight: bolder;
     padding: 30px;
     text-align: center;
+    display: block;
+    position: static;
+}
+
+hr {
+    margin: 20px;
 }
 
 .imggallery{
     padding: 0px 40px;
+    display: block;
+    position: static;
 }
 
 .galleryphotos{
     width:100%;
     border-radius: 20px;
-    border: 5px solid #BEEDE5;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.418)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.418);
+    display: block;
+    position: static;
 }
 
-.imgcolumn{
+.img4column{
+    width: 25%;
+    padding: 10px;
+    float: left;
+    position: relative;
+    display:block;
+}
+
+.img3column{
     width: 33.33%;
     padding: 10px;
     float: left;
@@ -62,18 +80,19 @@
     content: "";
     clear: both;
     display: table;
+    margin-bottom: 30px;
 }
 
 .overlay {
     position: absolute;
-    background: #beede5ab;
+    background: #beede5d5;
     color: black;
     width: 80%;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    transition: .5s ease;
+    transition: 0.3s ease;
     opacity:0;
     font-size: 20px;
     padding: 20px;
@@ -81,7 +100,7 @@
     border-radius: 20px;
 }
 
-.imgcolumn:hover .overlay {
+.img3column:hover .overlay, .img4column:hover .overlay{
     opacity: 1;
 }
 
@@ -90,7 +109,7 @@
     .imggallery{
         padding: 0px 20px;
     }
-    .imgcolumn{
+    .img3column, .img4column{
         width: 100%;
         padding: 10px;
     }
