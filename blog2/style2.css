@@ -8,11 +8,45 @@
     margin:0;
 }
 
+.icons {
+    width: 80px;
+    height: 80px;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 35px;
+    padding: 23px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.fa:hover, .fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #C13584;
+    color: white;
+}
+
+.fa-tiktok {
+    color: white;
+    background: black;
+}
+
 .menu {
     overflow: hidden;
     background-color: #E0F8F5;
     font-weight: bold;
     margin: 0;
+    position: relative;
 }
 
 .menu a{
@@ -32,6 +66,10 @@
 
 .menu a:hover{
     color:#3e524e
+}
+
+.menu-right {
+    float:right;
 }
 
 .sectiontitle {
@@ -104,6 +142,11 @@ hr {
     opacity: 1;
 }
 
+.left, .right {
+    width:50%;
+    float: left;
+}
+
 /* Extra small devices (phones) */
 @media only screen and (max-width: 600px) {
     .imggallery{
@@ -113,9 +156,25 @@ hr {
         width: 100%;
         padding: 10px;
     }
+    .left, .right {
+        width:100%;
+    }
 }
 
 /* Large devices (laptops/desktops) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 922px) {
+    .menu-center a {
+        float: right;
+    }
+}
 
+@media only screen and (min-width: 922px) {
+
+    .menu-center a {
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
