@@ -1,8 +1,13 @@
 * {
-    font-family: 'Montserrat';
+    font-family: 'Spectral';
     box-sizing: border-box;
     background-color: #fff8f6;
     color:black;
+}
+
+.logo{
+    height:40px;
+    width:200px;
 }
 
 .body{
@@ -62,8 +67,8 @@ h3 {
     color: #000000;
     text-align: center;
     text-decoration: none;
-    padding: 15px 20px;
-    font-size: 16px;
+    padding: 12px 20px;
+    font-size: 18px;
 }
 
 .menu a.active {
